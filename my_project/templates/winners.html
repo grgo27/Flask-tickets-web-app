@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<div class="jumbotron">
+  {% if not number_of_applications %}
+  <!-- ako je broj aplikacija 0 onda je false -->
+  <h1>Nobody applied for wining the tickets</h1>
+  {% else %}
+  <h1>Winners are applicants with theese application IDs:</h1>
+  <ul>
+    {% for winner in winners %}
+    <li>Application ID:{{winner.tick_application.id}}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endblock %}

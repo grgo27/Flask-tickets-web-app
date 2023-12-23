@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<div class="jumbotron">
+  <h3>Current number of applications is: {{number_of_applications}}</h3>
+  <h1>
+    Winners will be visible after: {{specific_datetime.strftime('%d.%m.%Y')}}
+  </h1>
+  {% endblock %}
+</div>
