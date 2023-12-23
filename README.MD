@@ -1,4 +1,4 @@
-- I am big football fan so after my appliction for EURO tickets I got an idea of making a simple web application where you ned to register, login, create application for winning the tickets. Winners will be post on site and they will be notified on email.
+- I am big football fan so after my appliction for EURO tickets I got an idea of making a simple web application where you need to register, login, create application for winning the tickets. Winners will be post on site and they will be notified on email.
 - Application can be run both with docker or manually because all of the requirements are inside project.
 - I implemented email sending, so for that purpose in main **init**.py under EMAIL SETUP for sender_email and app.config['MAIL_PASSWORD'] appropiate credentials should be set.
   Because I chose GMAIL for server, appropiate app password should be generated and put under app.config['MAIL_PASSWORD'].
